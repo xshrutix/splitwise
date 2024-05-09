@@ -1,0 +1,59 @@
+//Color Variables
+$white-color: white;
+$light-grey-color: #bfbfc1;
+$black-color: #000000;
+$black-sheep-color: #0f0d0d;
+$black-color-alpha: #00000080;
+$blue-magenta: #1d1d1f;
+$bright-orange: #f28e1b;
+$blue-light: #007aff;
+$error-red: #ff3b30;
+$success-color: #30db5b;
+//Font Weight Variables
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-large: 600;
+$font-bold: 700;
+$font-extra-bold: 900;
+
+//latter Spacing variables
+$letter-spacing-base: 0.5px !default;
+$letter-spacing-lg: 2px !default;
+$letter-spacing-xl: 4px !default;
+
+//Line Height variables
+$line-height-default: 1.5;
+
+//Font size variables
+$font-size-xs: 0.8125rem;
+$font-size-sm: 0.875rem;
+$font-size-default: 0.9375rem;
+$font-size-browser-default: 1rem;
+$font-size-md: 1.0625rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.5rem;
+
+//Width and height variables
+$full-width: 100%;
+$full-height: 100%;
+$full-viewport-width: 100vw;
+$full-viewport-height: 100vh;
+
+//Container width variables
+$container-default-width: 80%;
+$container-full-width: $full-width;
+$container-max-width: 1200px;
+
+//Border radius width variables
+$border-radius-default: 5px;
+$border-radius-sm: 2px;
+$border-radius-md: 8px;
+$border-radius-lg: 10px;
+$border-radius-circle: 50%;
+
+//background color variables
+$background-color-transparent: transparent;
+
+//links text color
+$link-text--blue: #2f2d4f;

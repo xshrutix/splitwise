@@ -1,0 +1,131 @@
+.summary {
+	background-color: #f7f7fb;
+	.summary__list--box {
+		background-color: white;
+		box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+		padding: 10px;
+		border-radius: 25px;
+		width: 550px;
+		flex: 0 1 calc(50% - 30px);
+
+		.summary__list--content {
+			p:nth-child(1) {
+				flex: 1 1 50%;
+			}
+			p:nth-child(2) {
+				flex: 1 1 50%;
+				align-items: end;
+			}
+			p:nth-child(3) {
+				flex: 100%;
+			}
+			p:nth-child(4) {
+				flex: 1 1 50%;
+			}
+			p:nth-child(5) {
+				flex: 1 1 50%;
+				align-items: end;
+			}
+		}
+		.summary__member--content {
+			border-radius: 44px;
+			padding: 7px 20px;
+			margin-top: 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.summary {
+		.summary__list--box {
+			p {
+				font-size: 20px !important;
+			}
+			.summary__list-btn {
+				button {
+					margin-top: 12px;
+				}
+				button:nth-child(1) {
+					flex: 100%;
+				}
+				button:nth-child(2) {
+					flex: 100%;
+				}
+				button:nth-child(3) {
+					flex: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.summary {
+		.summary__list--box {
+			p {
+				font-size: 15px !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.summary {
+		.summary__list--box {
+			margin: 25px auto !important;
+			padding-top: 20px !important ;
+			flex-grow: unset !important;
+			flex-shrink: unset !important;
+			flex-basis: unset !important;
+			.summary__list--content {
+				p {
+					line-height: 20px !important;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.summary {
+		.summary__title {
+			flex-direction: column;
+			width: 100%;
+
+			p {
+				margin-left: unset !important;
+			}
+			button {
+				margin: 10px 0px 10px 0px !important;
+			}
+		}
+		.summary__list--box {
+			.summary__list--content {
+				flex-direction: column;
+				margin-top: 20px !important;
+				p {
+					flex: 100% !important;
+					align-items: start !important;
+				}
+			}
+
+			.summary__member--wrapper {
+				justify-content: center;
+				margin-top: 30px;
+				.summary__member--content {
+					margin-top: 15px !important;
+					margin-right: unset !important;
+					padding: 7px 35px !important;
+					flex-wrap: wrap;
+					border-radius: 20px !important;
+					flex-direction: column;
+					align-items: center;
+
+					p {
+						margin-top: 10px !important;
+					}
+				}
+			}
+		}
+	}
+}

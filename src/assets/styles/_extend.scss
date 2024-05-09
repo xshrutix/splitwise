@@ -1,0 +1,119 @@
+%box-sizing--border-box {
+	box-sizing: border-box;
+}
+
+%d--inline-block {
+	display: inline-block;
+}
+%d--inline-flex {
+	display: -webkit-inline-box !important;
+	display: -ms-inline-flexbox !important;
+	display: inline-flex !important;
+}
+
+%d--block {
+	display: block;
+}
+
+%d--none {
+	display: none !important;
+}
+%transition--default {
+	@include transition(all, 0.5s, ease);
+}
+
+%object__fit--contain {
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+%object__fit--cover {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+%flex {
+	display: -webkit-flex !important;
+	/* autoprefixer: off */
+	display: -webkit-box !important;
+	/* autoprefixer: on */
+	display: -moz-flex !important;
+	display: -moz-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+}
+
+%flex--row {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	flex-direction: row;
+}
+
+%flex--column {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+}
+
+%flex--row-reverse {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	flex-direction: row-reverse;
+}
+
+%flex--column-reverse {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	flex-direction: column-reverse;
+}
+
+%flex--wrap {
+	flex-wrap: wrap;
+}
+
+%justify__content--center {
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+%justify__content--start {
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+}
+
+%justify__content--end {
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+}
+
+%justify__content--between {
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+
+%justify__content--around {
+	justify-content: space-around;
+}
+
+%justify__content--evenly {
+	justify-content: space-evenly;
+}
+%align__items--center {
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+%align__items--end {
+	-webkit-box-align: end;
+	align-items: flex-end;
+}
+
+%align__items--start {
+	-webkit-box-align: start;
+	align-items: flex-start;
+}
+
+%align__items--baseline {
+	-webkit-box-align: baseline;
+	align-items: baseline;
+}

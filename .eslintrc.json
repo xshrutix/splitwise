@@ -1,0 +1,76 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"plugins": ["react", "react-hooks", "@typescript-eslint"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"extends": [
+		// "plugin:react/recommended",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/jsx-runtime",
+		"prettier"
+	],
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"rules": {
+		"@typescript-eslint/no-explicit-any": "off",
+		"react/no-typos": 2,
+		"react/no-direct-mutation-state": 2,
+		"react/no-redundant-should-component-update": 2,
+		"react/sort-comp": [
+			2,
+			{
+				"order": ["instance-variables", "static-methods", "lifecycle", "render", "everything-else"]
+			}
+		],
+		"react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+		"react-hooks/exhaustive-deps": 1,
+		"react/no-unused-state": 2,
+		"react/self-closing-comp": 1,
+		"react/void-dom-elements-no-children": 2,
+		"react/jsx-uses-vars": 1,
+		"react/prop-types": 0,
+		"@typescript-eslint/no-unused-vars": 2,
+		"@typescript-eslint/camelcase": 0,
+		"@typescript-eslint/naming-convention": [
+			"off",
+			{
+				"selector": "interface",
+				"format": ["PascalCase"],
+				"custom": {
+					"regex": "^I[A-Z]",
+					"match": true
+				}
+			}
+		],
+		"no-empty-pattern": 2,
+		"@typescript-eslint/no-empty-interface": [
+			"error",
+			{
+				"allowSingleExtends": true
+			}
+		],
+		"@typescript-eslint/explicit-function-return-type": 0,
+		"no-multi-spaces": 2,
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"computed-property-spacing": [2, "never"],
+		"object-curly-spacing": [2, "always", {}],
+		"object-curly-newline": 0,
+		"object-property-newline": [0, { "allowAllPropertiesOnSameLine": true }],
+		"array-bracket-spacing": [2, "never"],
+		"block-spacing": "warn",
+		"@typescript-eslint/semi": 1
+	}
+}

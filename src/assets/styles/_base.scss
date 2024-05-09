@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+* {
+	font-family: 'Inter-regular';
+	user-select: none;
+	outline: none;
+}
+
+body {
+	@include margin(0);
+	@include padding(0);
+	color: $black-color;
+}
+
+::-webkit-scrollbar {
+	@include width(3px);
+	@include borderRadius(5px);
+}
+
+::-webkit-scrollbar-track {
+	background-color: $background-color-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	@include borderRadius(5px);
+	background-color: $white-color;
+}
+
+button {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+	outline: 0;
+}
+
+h1 {
+	font-size: 3rem;
+
+	&.size--small {
+		font-size: 2.125rem;
+	}
+}
+
+h2 {
+	font-size: 2.4375rem;
+
+	&.size--small {
+		font-size: 2.0625rem;
+	}
+}
+
+h3 {
+	font-size: 2.0625rem;
+
+	&.size--small {
+		font-size: 1.75rem;
+	}
+}
+
+h4 {
+	font-size: 2.0625rem;
+
+	&.size--small {
+		font-size: 1.4375rem;
+	}
+}
+
+h5 {
+	font-size: 1.4375rem;
+
+	&.size--small {
+		font-size: 1.1875rem;
+	}
+}
+
+h6 {
+	font-size: 1.1875rem;
+
+	&.size--small {
+		font-size: 1rem;
+	}
+}
+
+p {
+	font-size: 0.875rem;
+	@include lineHeight(17px);
+}

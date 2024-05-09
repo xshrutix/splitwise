@@ -1,0 +1,42 @@
+@import '../styles/variables';
+.primary--btn {
+	background: $blue-light;
+	padding: 7px 16px;
+	border: none;
+	color: $white-color;
+	letter-spacing: 1.5px;
+}
+
+.success--btn {
+	background: $background-color-transparent;
+	padding: 7px 16px;
+	border: 1px solid $success-color;
+	color: $success-color;
+	letter-spacing: 1.5px;
+	transition: all 0.5s;
+	&:hover {
+		background: $success-color;
+		color: $white-color;
+		transition: all 0.5s;
+	}
+}
+
+.error-btn {
+	background: $background-color-transparent;
+	padding: 7px 16px;
+	border: 1px solid $error-red;
+	color: $error-red;
+	letter-spacing: 1.5px;
+	&:hover {
+		background: $error-red;
+		color: $white-color;
+		transition: all 0.5s;
+	}
+}
+
+.user-profile--wrapper {
+	background-color: #ff40dd40;
+	border-radius: 44px;
+	padding: 7px 16px;
+	margin-top: 15px;
+}

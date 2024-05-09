@@ -1,0 +1,142 @@
+@mixin width($value) {
+	width: $value;
+}
+
+@mixin min-width($value) {
+	min-width: $value;
+}
+@mixin max-width($value) {
+	max-width: $value;
+}
+@mixin height($value) {
+	height: $value;
+}
+
+@mixin min-height($value) {
+	min-height: $value;
+}
+
+@mixin max-height($value) {
+	max-height: $value;
+}
+@mixin margin($value...) {
+	margin: $value;
+}
+
+@mixin marginTop($value) {
+	margin-top: $value;
+}
+
+@mixin marginBottom($value) {
+	margin-bottom: $value;
+}
+
+@mixin marginLeft($value) {
+	margin-left: $value;
+}
+
+@mixin marginRight($value) {
+	margin-right: $value;
+}
+
+@mixin padding($value...) {
+	padding: $value;
+}
+
+@mixin paddingTop($value) {
+	padding-top: $value;
+}
+
+@mixin paddingBottom($value) {
+	padding-bottom: $value;
+}
+
+@mixin paddingLeft($value) {
+	padding-left: $value;
+}
+
+@mixin paddingRight($value) {
+	padding-right: $value;
+}
+
+@mixin textAlign($value) {
+	text-align: $value;
+}
+
+@mixin lineHeight($value) {
+	line-height: $value;
+}
+
+@mixin textTransform($value) {
+	text-transform: $value;
+}
+
+@mixin textDecoration($value) {
+	text-decoration: $value;
+}
+
+@mixin borderRadius($value) {
+	border-radius: $value;
+}
+
+@mixin border($width, $style, $color, $position: false) {
+	@if $position {
+		border-#{$position}: $width $style $color;
+	} @else {
+		border: $width $style $color;
+	}
+}
+
+@mixin position($value) {
+	position: $value;
+}
+
+@mixin zIndex($value) {
+	z-index: $value;
+}
+
+@mixin overflow($value) {
+	overflow: $value;
+}
+
+@mixin flexDirections($value) {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+}
+@mixin transition($property, $duration, $timingFun: '') {
+	@if $timingFun== '' {
+		-webkit-transition: $property $duration;
+		transition: $property $duration;
+	} @else {
+		-webkit-transition: $property $duration $timingFun;
+		transition: $property $duration $timingFun;
+	}
+}
+
+@mixin button() {
+	height: 35px;
+	@include padding(0 15px);
+	background-color: $background-color-transparent;
+	font-weight: $font-bold;
+	color: $white-color;
+	font-size: 0.75rem;
+	border: 0;
+	border-radius: $border-radius-default;
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+@mixin box() {
+	background-color: $blue-magenta;
+	backdrop-filter: blur(65px);
+	border: 1.5px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.05);
+}
+@mixin buttonBordered($border-c: '', $text-color: '') {
+	line-height: 33px;
+	border: 1px solid $border-c;
+	color: $text-color;
+}

@@ -1,0 +1,24 @@
+.expense-form {
+	background-color: #f7f7fb;
+	width: calc(100% - 400px);
+}
+
+@media screen and (max-width: 900px) {
+	.expense-form {
+		width: calc(100% - 75px);
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.expense-form {
+		.expense__form--title-wrapper {
+			.expense-form--title {
+				margin-left: 20px !important;
+				font-size: 20px !important;
+			}
+			button {
+				margin-right: 20px !important;
+			}
+		}
+	}
+}
